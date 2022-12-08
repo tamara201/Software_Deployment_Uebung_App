@@ -1,5 +1,5 @@
 //Load express module with `require` directive
-var express = require('expresss')
+var express = require('express')
 var app = express()
 
 //Define request response in root URL (/)
