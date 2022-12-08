@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: chavalentassoftwaredeploymentuebungapp 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: chavalentassoftwaredeploymentuebungapp
+  template:
+    metadata:
+      labels:
+        app: chavalentassoftwaredeploymentuebungapp 
+    spec:
+      containers:
+        - name: chavalentassoftwaredeploymentuebungapp 
+          image: lab5containerregistry2.azurecr.io/chavalentassoftwaredeploymentuebungapp
+          ports:
+          - containerPort: 8080
