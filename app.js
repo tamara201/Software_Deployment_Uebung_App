@@ -4,8 +4,8 @@ var app = express()
 var fs = require("fs");
 //Define request response in root URL (/)
 app.get('/', function (req, res) {
-  content =  fs.readFileSync("./src/index.html").toString();
-  //content = '<html><h1>Hello World!</h1></html>'
+  //content =  fs.readFileSync("./src/index.html").toString();
+  content = '<html><h1>Hello World!</h1></html>'
   res.send(content)
 })
 
