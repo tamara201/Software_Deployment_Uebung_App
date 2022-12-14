@@ -4,7 +4,11 @@ var app = express()
 
 //Define request response in root URL (/)
 app.get('/', function (req, res) {
-  res.send('<html><button id="myButton" class="float-left submit-button" >Home</button><script type="text/javascript">document.getElementById("myButton").onclick = function () { location.href = "https://www.metalevel.at/prolog";};</script></html>"')
+  content = '<html><h1>Hello World!</h1></html>'
+  content = '<html><h1>Hello World!</h1><br><button id="myButton" class="float-left submit-button" >Die Mächtigkeit!</button><script type="text/javascript">document.getElementById("myButton").onclick = function () { location.href = "https://www.metalevel.at/prolog";};</script></html>'
+
+
+  res.send(content)
   //res.redirect('https://www.metalevel.at/prolog');
 })
 
