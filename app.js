@@ -4,7 +4,8 @@ var app = express()
 
 //Define request response in root URL (/)
 app.get('/', function (req, res) {
-  res.send('Hello World!')
+  //res.send('Hello World!')
+  res.redirect('https://www.metalevel.at/prolog');
 })
 
 //Launch listening server on port 8080
